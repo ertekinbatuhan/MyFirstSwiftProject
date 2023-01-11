@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lana Del Rey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H3-7J-H7P">
+                                <rect key="frame" x="79" y="103" width="235" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="zYF-Xq-EDv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZu-p1-ql2">
+                                <rect key="frame" x="111" y="474" width="170" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="KQI-9i-DGT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYb-N9-Clj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lana" translatesAutoresizingMaskIntoConstraints="NO" id="K4F-3f-9oi">
+                                <rect key="frame" x="32" y="247" width="329" height="179"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hZu-p1-ql2" secondAttribute="bottom" constant="242" id="0Tk-9h-T6P"/>
+                            <constraint firstItem="K4F-3f-9oi" firstAttribute="top" secondItem="5H3-7J-H7P" secondAttribute="bottom" constant="50" id="38Z-cI-vPi"/>
+                            <constraint firstItem="hZu-p1-ql2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHi-rh-yBh"/>
+                            <constraint firstItem="K4F-3f-9oi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="NJ2-Nh-dzO"/>
+                            <constraint firstItem="5H3-7J-H7P" firstAttribute="centerX" secondItem="K4F-3f-9oi" secondAttribute="centerX" id="Oeh-Iy-gHa"/>
+                            <constraint firstItem="5H3-7J-H7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="UnV-Y2-GOM"/>
+                            <constraint firstItem="hZu-p1-ql2" firstAttribute="top" secondItem="K4F-3f-9oi" secondAttribute="bottom" constant="33" id="YaK-FE-emk"/>
+                            <constraint firstItem="K4F-3f-9oi" firstAttribute="centerX" secondItem="hZu-p1-ql2" secondAttribute="centerX" id="b8v-ox-3dX"/>
+                            <constraint firstItem="hZu-p1-ql2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="f0S-dw-xrT"/>
+                            <constraint firstItem="5H3-7J-H7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="pjl-1o-rqW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="K4F-3f-9oi" id="np7-wW-hO0"/>
+                        <outlet property="laneDelRey" destination="5H3-7J-H7P" id="e3E-gG-J7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lana" width="542" height="409"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
